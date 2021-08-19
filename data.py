@@ -52,7 +52,6 @@ def get_dataset(name, type='train', download=True, capacity=None, permutation=No
 
 #----------------------------------------------------------------------------------------------------------#
 
-
 class SubDataset(Dataset):
     '''To sub-sample a dataset, taking only those samples with label in [sub_labels].
 
@@ -241,3 +240,5 @@ def get_multitask_experiment(name, scenario, tasks, data_dir="./datasets", only_
 
     # Return tuple of train-, validation- and test-dataset, config-dictionary and number of classes per task
     return config if only_config else ((train_datasets, test_datasets), config, classes_per_task)
+
+#add cifar
